@@ -30,7 +30,7 @@ module BitBucket
 
     def request(method, path, params, options={})
       if !METHODS.include?(method)
-        raise ArgumentError, "unkown http method: #{method}"
+        raise ArgumentError, "unknown http method: #{method}"
       end
       # _extract_mime_type(params, options)
 
